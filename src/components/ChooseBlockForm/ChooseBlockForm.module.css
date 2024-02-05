@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.label {
+    width: 290px;
+    margin-right: 30px;
+}
+
+.selectedPrice {
+    padding: 8px 10px;
+    color: white;
+    border-radius: 2px;
+    background-color: #1f3058;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.selectedPrice:hover {
+    background-color: #184872;
+}
+
+.input {
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input:focus {
+    border-color: #5ea9ff;
+    box-shadow: 0px 0px 10px 1px rgba(75, 171, 255, 0.544);
+    /* Изменение цвета границы при фокусе */
+    /* Изменение цвета фона при фокусе */
+    outline: none;
+}
+
+@media (min-width: 700px) and (max-width: 1001px) {
+    .label{
+        width: 160px;
+    }
+}
